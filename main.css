@@ -1,0 +1,665 @@
+.icon-gray {
+  color: #7e7e7e;
+}
+
+.icon-primary {
+  color: #9356DC;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.header-location {
+  background-color: #eaeaea;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.search-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.search-discover {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.search-discover h2 {
+  font-weight: 300;
+}
+
+.search {
+  background-color: #f6f6f6;
+}
+
+.fonctionnement-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.number-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fonctionnement-options-row h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.fonctionnement-options-row {
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: #f6f6f6;
+}
+
+.restaurants-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.restaurants-card {
+  background-color: white;
+  border-radius: 15px;
+}
+
+figcaption {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.heart {
+  font-size: 22px;
+}
+
+.restaurants-card-name {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.restaurants-card-location {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+}
+
+.footer-logo {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-nav-item {
+  display: flex;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.favorite-selected {
+  cursor: pointer;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-container {
+  width: 100%;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-location {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+
+.search {
+  height: 287px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-wrapper {
+  height: 287px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+}
+
+.search-heading {
+  margin-left: 11.2%;
+  height: 68px;
+  display: flex;
+  margin-right: 15.47%;
+  text-align: center;
+  justify-content: center;
+}
+
+.search-discover {
+  height: 46px;
+  margin-left: 9.07%;
+  margin-right: 6.93%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  margin-top: 27px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 21.87%;
+  margin-right: 20%;
+}
+
+button {
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 18.75px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fonctionnement {
+  height: 440px;
+  width: 100%;
+}
+
+.fonctionnement-wrapper {
+  height: 440px;
+  width: 100%;
+  padding-top: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fonctionnement-title {
+  margin-bottom: 26px;
+}
+
+.fonctionnement-options {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24.93px;
+  padding-left: 12.51px;
+}
+
+.fonctionnement-options-row {
+  display: flex;
+  height: 72.38px;
+  align-items: center;
+  width: 100%;
+}
+
+.fonctionnement-options-row:nth-child(1) > .fa-solid:nth-child(2) {
+  margin-left: 7.98px;
+  margin-right: 24px;
+}
+
+.fonctionnement-options-row:nth-child(2) > .fa-solid:nth-child(2) {
+  margin-left: 9px;
+  margin-right: 23.73px;
+}
+
+.fonctionnement-options-row:nth-child(3) > .fa-solid:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.fonctionnement-options-row .fa-solid:nth-child(2) {
+  margin-bottom: 7px;
+}
+
+.number-icon {
+  position: relative;
+  right: 12.51px;
+}
+
+.restaurants {
+  padding-left: 17px;
+  padding-right: 18px;
+  background-color: #f6f6f6;
+}
+
+.restaurants .heart {
+  margin-top: 7px;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.restaurants-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 18px;
+  margin-bottom: 66px;
+}
+
+.restaurants-title {
+  padding-top: 54px;
+  margin-left: 3px;
+  margin-bottom: 25px;
+}
+
+.restaurants-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurants-card-txt {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.restaurants-card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurants-card img {
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 175px;
+  width: 100%;
+}
+
+.restaurants-card-content {
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-bottom: 12px;
+  height: 30.3%;
+}
+
+.footer-nav {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  max-height: 99px;
+}
+
+.footer {
+  height: 186px;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-item {
+  margin-bottom: 7px;
+}
+
+.footer svg {
+  width: 11px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.footer-nav-item:nth-child(1) svg {
+  margin-right: 11px;
+}
+
+.footer-nav-item:nth-child(2) svg {
+  margin-right: 10.08px;
+}
+
+.header-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 17px;
+  left: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 17.2px;
+  height: 16px;
+  font-size: 20px;
+  color: #353535;
+}
+
+.page-header {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header-logo {
+  width: 162px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #101010;
+  margin-top: 12px;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 73.335288941%;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-main-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 45px 45px 0 0;
+  padding-top: 32px;
+  position: relative;
+  top: -55px;
+}
+
+.main-title {
+  margin: 0 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page-main-title {
+  display: flex;
+  font-family: Shrikhand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 17px 42px 17px;
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #101010;
+}
+
+.page-heart {
+  margin-right: 7.03%;
+}
+
+section {
+  margin: 0 13px;
+  margin-bottom: 40px;
+}
+
+.menu-title {
+  text-transform: uppercase;
+  height: 27px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.menu-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10.67%;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.menu-restaurant-item {
+  background-color: white;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  padding: 15px 13.5px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-restaurant-item:nth-child(3) {
+  box-shadow: none;
+}
+
+.page-footer {
+  margin-top: 0;
+}
+
+.menu-restaurant-item-txt h2 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menu-restaurant-item-txt p {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menu-restaurant-item-price {
+  display: flex;
+  align-items: flex-end;
+}
+
+main {
+  background-color: #F6F6F6;
+  margin-bottom: -19px;
+}
+
+.order-button {
+  width: 186px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.order-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer {
+  top: -16px;
+}/*# sourceMappingURL=main.css.map */

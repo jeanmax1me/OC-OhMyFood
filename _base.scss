@@ -1,0 +1,222 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.header-location {
+  background-color: #eaeaea;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.search-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.search-discover {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.search-discover h2 {
+  font-weight: 300;
+}
+
+.search {
+  background-color: #f6f6f6;
+}
+
+.fonctionnement-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.number-icon {
+  width: 24px;
+  height: 24px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fonctionnement-options-row h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.fonctionnement-options-row {
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: #f6f6f6;
+}
+
+.restaurants-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.restaurants-card {
+  background-color: white;
+  border-radius: 15px;
+}
+
+figcaption {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.heart {
+  font-size: 22px;
+}
+
+.restaurants-card-name {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.restaurants-card-location {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+}
+
+.footer-logo {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-nav-item {
+  display: flex;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.favorite-selected { 
+  cursor: pointer;
+  background: $btn-gradient;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  background-clip: text;
+}
