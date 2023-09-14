@@ -74,6 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  overflow: hidden;
 }
 
 .page-main-title {
@@ -97,8 +98,11 @@
 }
 
 .menu-section {
+  display: flex;
+  flex-direction: column;
   margin: 0 13px;
   margin-bottom: 40px;
+  row-gap: 12px;
 }
 
 .menu-title {
@@ -111,7 +115,6 @@
   letter-spacing: 0em;
   text-align: left;
   position: relative;
-  margin-bottom: 12px;
 }
 
 .menu-title::before {
@@ -137,19 +140,32 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 13.5px;
+  width: 100%;
+  white-space: nowrap;       
+  overflow: hidden;         
+  text-overflow: ellipsis;  
 }
 
-#toggle:checked ~ .menu-restaurant-item-selected {
-  background-color: green;
+.menu-restaurant-item-txt {
+  white-space: nowrap;         
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu-restaurant-item .menu-restaurant-item-selected {
+  width: 68px;
   right: 0;
-  height: 300px;
-  width: 300px;
 }
 
 .menu-restaurant-item-selected {
  position: relative;
   height: 100%;
-  width: 68px;
+  width: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,6 +195,9 @@
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  white-space: nowrap;
+text-overflow: ellipsis; 
+overflow: hidden;
 }
 
 .menu-restaurant-item-txt p {
@@ -188,11 +207,15 @@
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+text-overflow: ellipsis; 
 }
 
 .menu-restaurant-item-price {
   display: flex;
   align-items: flex-end;
+  z-index: 40;
 }
 
 main {
