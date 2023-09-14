@@ -50,8 +50,10 @@
                 <i class="fa-solid fa-arrow-left arrow"></i>
             </div>
             <div class="page-header-logo">
-                <a href="#">
-                    <img src="./images/logo/ohmyfood.png" alt="OhMyFood - Home" />
+                <a href="#" title="Retour à la page d'accueil">
+                    <div class="page-header-logo-container">
+                        <img src="./images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68" />
+                    </div>
                 </a>
             </div>
     </header>
@@ -102,18 +104,31 @@
                         </div>
                     </div>
                 </section>
-                
 
-               <section class="menu-section plats">
+
+                <section class="menu-section plats">
                     <div class="menu-title">plats</div>
                     <div class="menu-restaurant">
                         <div class="menu-restaurant-item">
-                            <div class="menu-restaurant-item-txt">
-                                <h2>Filet de bœuf aux herbes</h2>
-                                <p>Accompagné de sa ribambelle de légumes</p>
+                            <label for="toggle">
+                            <input type="checkbox" id="toggle">
+                            <div class="menu-restaurant-item-content">
+                                <div class="menu-restaurant-item-txt">
+                                    <h2>Filet de bœuf aux herbes</h2>
+                                    <p>Accompagné de sa ribambelle de légumes</p>
+                                </div>
+                                <div class="menu-restaurant-item-price">
+                                    40€
+                                </div>
+                            </label>
                             </div>
-                            <div class="menu-restaurant-item-price">
-                                40€
+                            <div class="menu-restaurant-item-selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
                             </div>
                         </div>
                         <div class="menu-restaurant-item">
@@ -136,7 +151,7 @@
                         </div>
                     </div>
                 </section>
-                 
+
                 <section class="menu-section desserts">
                     <div class="menu-title">desserts</div>
                     <div class="menu-restaurant">

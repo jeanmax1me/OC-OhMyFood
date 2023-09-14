@@ -11,6 +11,7 @@
   */
 * {
   margin: 0;
+  padding: 0;
 }
 /*
     Typographic tweaks!
@@ -83,6 +84,10 @@ a {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.header-location i {
+  margin-right: 4.53%;
 }
 
 .search-heading {
