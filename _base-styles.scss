@@ -219,9 +219,5 @@ figcaption {
 }
 
 .favorite-selected { 
-  cursor: pointer;
-  background: $btn-gradient;
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  background-clip: text;
+@include favorite-selected
 }

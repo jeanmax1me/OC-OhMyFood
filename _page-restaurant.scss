@@ -63,18 +63,20 @@
   padding-top: 32px;
   position: relative;
   top: -55px;
+  text-wrap: nowrap;
 }
 .main-title {
   margin: 0 17px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .menu-restaurant {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
-  overflow: hidden;
+ 
 }
 
 .page-main-title {
@@ -93,9 +95,28 @@
   color: #101010;
 }
 
+@media screen and (max-width: 360px) {
+  .page-main-title {
+    font-size: calc(0.65rem + 0.3vw);
+  }
+}
+
 .page-heart {
   margin-right: 7.03%;
 }
+
+input[type="checkbox"]:not(:checked) ~ .favorite-restaurants .filled-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ .favorite-restaurants .unfilled-heart {
+  position: absolute;
+  visibility: hidden;
+}
+
 
 .menu-section {
   display: flex;
@@ -133,7 +154,9 @@
   height: 72px;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  flex-direction: row;
+  white-space: nowrap;
+width: 100%;
 }
 
 .menu-restaurant-item-content {
@@ -144,6 +167,7 @@
   white-space: nowrap;       
   overflow: hidden;         
   text-overflow: ellipsis;  
+  cursor: pointer;
 }
 
 .menu-restaurant-item-txt {
@@ -151,6 +175,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   z-index: 0;
+
 }
 
 input[type="checkbox"] {
@@ -163,7 +188,7 @@ input[type="checkbox"]:checked ~ .menu-restaurant-item .menu-restaurant-item-sel
 }
 
 .menu-restaurant-item-selected {
- position: relative;
+  position: relative;
   height: 100%;
   width: 0px;
   display: flex;
@@ -171,7 +196,7 @@ input[type="checkbox"]:checked ~ .menu-restaurant-item .menu-restaurant-item-sel
   align-items: center;
   background-color: #99e2d0;
   border-radius: 0 20% 20% 0;
-  right: -60px;
+  right: 0px;
   transition: 0.3s;
 }
 

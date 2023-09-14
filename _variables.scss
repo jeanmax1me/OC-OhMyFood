@@ -12,3 +12,16 @@ $btn-gradient: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 .icon-primary {
     color: $primary-color;
 }
+
+a {
+    cursor: pointer;
+}
+
+@mixin favorite-selected {
+    cursor: pointer;
+    background: $btn-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
