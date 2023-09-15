@@ -16,7 +16,7 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="og:type" content="website" />
-    <meta property="og:image" content="./images/logo/ohmyfood.png" />
+    <meta property="og:image" content="./../images/logo/ohmyfood.png" />
     <meta property="og:title" content="OhMyFood - Commande de Repas en Ligne" />
     <meta property="og:description"
         content="Commandez des repas gastronomiques en ligne avec OhMyFood. Créez votre menu personnalisé et évitez l'attente dans les restaurants. Découvrez une expérience culinaire haut de gamme à Paris et New-York." />
@@ -25,13 +25,13 @@
     <meta name="twitter:title" content="OhMyFood - Commande de Repas en Ligne" />
     <meta name="twitter:description"
         content="Commandez des repas gastronomiques en ligne avec OhMyFood. Créez votre menu personnalisé et évitez l'attente dans les restaurants." />
-    <meta name="twitter:image" content="./images/logo/ohmyfood.png" />
+    <meta name="twitter:image" content="./../images/logo/ohmyfood.png" />
 
     <title>OhMyFood - Commande de Repas en Ligne</title>
 
     <link rel="canonical" href="https://www.ohmyfood.com" />
-    <link rel="icon" href="./images/logo/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./../images/logo/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./../main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,16 +43,21 @@
 </head>
 
 <body>
+    <div class="spinner-container">
+        <div class="spinner">
+        </div>
+    </div>
 
     <header class="page-header">
         <div class="page-header-container">
             <div class="header-arrow">
-                <i class="fa-solid fa-arrow-left arrow"></i>
+                <a href="./../index.html" title="Retourner à la page d'accueil">
+                <i class="fa-solid fa-arrow-left arrow"></i></a>
             </div>
             <div class="page-header-logo">
                 <a href="#" title="Retour à la page d'accueil">
                     <div class="page-header-logo-container">
-                        <img src="./images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68" />
+                        <img src="./../images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68" />
                     </div>
                 </a>
             </div>
@@ -61,16 +66,16 @@
     <main>
         <div class="image-container">
             <figure>
-                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="4402" height="2935"
-                    alt="La palette du goût à Ménilmontant">
+                <img src="./../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="3936"
+                height="2624" alt="À la française à Cité Rouge">
             </figure>
         </div>
 
         <div class="page-main-wrapper">
             <div class="page-main-title">
-                <h1>La palette du goût</h1>
-                <input type="checkbox" id="palette-favorite">
-                <label for="palette-favorite" title="Ajoutez aux favoris" class="favorite-restaurants">
+                <h1>À la française</h1>
+                <input type="checkbox" id="alafrancaise-favorite">
+                <label for="alafrancaise-favorite" title="Ajoutez aux favoris" class="favorite-restaurants">
                     <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
                     <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite-selected" aria-hidden="true"></i>
                 </label>
@@ -80,12 +85,37 @@
                     <div class="menu-title">entrées</div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree1">
-                        <label for="palette-entree1" class="menu-restaurant-item" title="Fricassée d'escargots">
+                        <input type="checkbox" id="alafrancaise-entree1">
+                        <label for="alafrancaise-entree1" class="menu-restaurant-item" title="Tartare de poulpe acidulé">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Fricassée d'escargots</h2>
-                                    <p>Au piment d'Espelette</p>
+                                    <h2>Tartare de poulpe acidulé</h2>
+                                    <p>Aux zestes d'orange</p>
+                                </div>
+                                <div class="menu-restaurant-item-price">
+                                    25€
+                                </div>
+                            </div>
+
+                            <div class="menu-restaurant-item-selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+
+
+                    <div class="menu-restaurant">
+                        <input type="checkbox" id="alafrancaise-entree2">
+                        <label for="alafrancaise-entree2" class="menu-restaurant-item" title="Velouté de légumes d'antan">
+                            <div class="menu-restaurant-item-content">
+                                <div class="menu-restaurant-item-txt">
+                                    <h2>Velouté de légumes d'antan</h2>
+                                    <p>Carotte, panais, topinambour</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     35€
@@ -103,38 +133,13 @@
                         </label>
                     </div>
 
-
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree2">
-                        <label for="palette-entree2" class="menu-restaurant-item" title="Foie gras de canard mi-cuit">
+                        <input type="checkbox" id="alafrancaise-entree3">
+                        <label for="alafrancaise-entree3" class="menu-restaurant-item" title="Soupe à l'oignon">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Foie gras de canard mi-cuit</h2>
-                                    <p>Et ses copeaux de truffe noire</p>
-                                </div>
-                                <div class="menu-restaurant-item-price">
-                                    35€
-                                </div>
-                            </div>
-
-                            <div class="menu-restaurant-item-selected">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"
-                                    class="w-5 h-5">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree3">
-                        <label for="palette-entree3" class="menu-restaurant-item" title="Œuf au plat">
-                            <div class="menu-restaurant-item-content">
-                                <div class="menu-restaurant-item-txt">
-                                    <h2>Œuf au plat</h2>
-                                    <p>Assaisonné à la truffe sur lit de caviar </p>
+                                    <h2>Soupe à l'oignon</h2>
+                                    <p>Revisitée</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     20€
@@ -158,12 +163,12 @@
                 <section class="menu-section plats">
                     <div class="menu-title">plats</div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat1">
-                        <label for="palette-plat1" class="menu-restaurant-item" title="Filet de bœuf aux herbes">
+                        <input type="checkbox" id="alafrancaise-plat1">
+                        <label for="alafrancaise-plat1" class="menu-restaurant-item" title="Coquilles Saint-Jacques">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Filet de bœuf aux herbes</h2>
-                                    <p>Accompagné de sa ribambelle de légumes</p>
+                                    <h2>Coquilles Saint-Jacques</h2>
+                                    <p>Accompagnées d'une purée de panais</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     40€
@@ -183,12 +188,12 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat2">
-                        <label for="palette-plat2" class="menu-restaurant-item" title="Parmentier de queue de bœuf">
+                        <input type="checkbox" id="alafrancaise-plat2">
+                        <label for="alafrancaise-plat2" class="menu-restaurant-item" title="Magret de canard">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Parmentier de queue de bœuf</h2>
-                                    <p>À la truffe noire sur sa purée de panais</p>
+                                    <h2>Magret de canard</h2>
+                                    <p>Et parmentier de pommes de terre</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     35€
@@ -207,15 +212,15 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat3">
-                        <label for="palette-plat3" class="menu-restaurant-item" title="Filet de turbot">
+                        <input type="checkbox" id="alafrancaise-plat3">
+                        <label for="alafrancaise-plat3" class="menu-restaurant-item" title="Pigeonneau d'Ille-et-Vilaine">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Filet de turbot</h2>
-                                    <p>Aux agrumes</p>
+                                    <h2>Pigeonneau d'Ille-et-Vilaine</h2>
+                                    <p>Sur son lit de gnocchis aux légumes</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
-                                    35€
+                                    44€
                                 </div>
                             </div>
 
@@ -234,12 +239,12 @@
                 <section class="menu-section desserts">
                     <div class="menu-title">desserts</div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert1">
-                        <label for="palette-dessert1" class="menu-restaurant-item" title="Paris-Brest">
+                        <input type="checkbox" id="alafrancaise-dessert1">
+                        <label for="alafrancaise-dessert1" class="menu-restaurant-item" title="Pétales de violettes glacés">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Paris-Brest</h2>
-                                    <p>Revisité</p>
+                                    <h2>Pétales de violettes glacés</h2>
+                                    <p>Et purée de noisettes</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     18€
@@ -258,13 +263,13 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert2">
-                        <label for="palette-dessert2" class="menu-restaurant-item"
-                            title="Macaron au chocolat d'exception">
+                        <input type="checkbox" id="alafrancaise-dessert2">
+                        <label for="alafrancaise-dessert2" class="menu-restaurant-item"
+                            title="Fondant au chocolat">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Macaron au chocolat d'exception</h2>
-                                    <p>Et glace à la vanille de Madagascar</p>
+                                    <h2>Fondant au chocolat</h2>
+                                    <p>Revisité</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     22€
@@ -282,13 +287,13 @@
                         </label>
                     </div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert3">
-                        <label for="palette-dessert3" class="menu-restaurant-item" title="Mousse au chocolat">
+                        <input type="checkbox" id="alafrancaise-dessert3">
+                        <label for="alafrancaise-dessert3" class="menu-restaurant-item" title="Millefeuille croustillant">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Mousse au chocolat
+                                    <h2>Millefeuille croustillant
                                     </h2>
-                                    <p>Au piment d'Espelette et à la truffe noire</p>
+                                    <p>Myrtilles et pâte d'amande</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     23€

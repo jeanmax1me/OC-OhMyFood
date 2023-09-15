@@ -17,6 +17,8 @@ a {
     cursor: pointer;
 }
 
+// Filled hearts
+
 @mixin favorite-selected {
     cursor: pointer;
     background: $btn-gradient;
@@ -24,6 +26,8 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+// Loading spinner
 
   .spinner-container {
     background-color: white;
@@ -37,7 +41,7 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: 0.2s linear 2.2s spinner-container;
+    animation: 0.2s linear 1s spinner-container;
     animation-fill-mode: forwards; 
   }
   
@@ -94,3 +98,50 @@ a {
     100% { transform: scale(1.2); opacity: 0.2; }
   }
  
+// Reset all styles for the input element
+input {
+    box-sizing: content-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: initial;
+    font-size: medium;
+    font-weight: normal;
+    background-color: transparent;
+    color: inherit;
+    text-align: left;
+    box-shadow: none;
+    outline: none;
+  }
+
+// FadeIn animation for Menus
+
+  @keyframes FadeIn {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .entrees {
+    animation: FadeIn 1.2s;
+    animation-delay: 1.6s;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+  };
+
+  .plats {
+  animation: FadeIn 1.2s;
+  animation-delay: 2s;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+  }
+
+  .desserts {
+    animation: FadeIn 1.2s;
+    animation-delay: 2.4s;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+  }

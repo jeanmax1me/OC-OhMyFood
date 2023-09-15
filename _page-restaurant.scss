@@ -268,3 +268,80 @@ main {
 .page-footer {
   top: -16px;
 }
+
+// tablet and desktop styles
+
+@media (min-width: 900px) {
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page-header {
+  height: 96.34px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: flex-start;
+}
+.page-header-container {
+  position: relative;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+.header-arrow {
+  position: unset;
+  padding-left: 23px;
+}
+.page-header-logo img {
+  padding-left: 20px;
+  width: 200px;
+}
+.image-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 383px;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 383px;
+  object-fit: cover;
+}
+.page-main-wrapper {
+  max-width: 1055px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  background-color: white;
+}
+.page-main-title {
+  width: 100%;
+  height: 41px;
+font-size: 14px;
+font-weight: 400;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+column-gap: 24px;
+justify-content: center;
+}
+.menu {
+  width: 634px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.menu-section {
+  margin: 0 0 40px 0;
+}
+.menu-title::before {
+width: 6.31%;
+}
+}

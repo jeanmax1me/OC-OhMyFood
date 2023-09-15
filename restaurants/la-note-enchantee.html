@@ -16,7 +16,7 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="og:type" content="website" />
-    <meta property="og:image" content="./images/logo/ohmyfood.png" />
+    <meta property="og:image" content="./../images/logo/ohmyfood.png" />
     <meta property="og:title" content="OhMyFood - Commande de Repas en Ligne" />
     <meta property="og:description"
         content="Commandez des repas gastronomiques en ligne avec OhMyFood. Créez votre menu personnalisé et évitez l'attente dans les restaurants. Découvrez une expérience culinaire haut de gamme à Paris et New-York." />
@@ -25,13 +25,13 @@
     <meta name="twitter:title" content="OhMyFood - Commande de Repas en Ligne" />
     <meta name="twitter:description"
         content="Commandez des repas gastronomiques en ligne avec OhMyFood. Créez votre menu personnalisé et évitez l'attente dans les restaurants." />
-    <meta name="twitter:image" content="./images/logo/ohmyfood.png" />
+    <meta name="twitter:image" content="./../images/logo/ohmyfood.png" />
 
     <title>OhMyFood - Commande de Repas en Ligne</title>
 
     <link rel="canonical" href="https://www.ohmyfood.com" />
-    <link rel="icon" href="./images/logo/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./../images/logo/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./../main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,16 +43,21 @@
 </head>
 
 <body>
+    <div class="spinner-container">
+        <div class="spinner">
+        </div>
+    </div>
 
     <header class="page-header">
         <div class="page-header-container">
             <div class="header-arrow">
-                <i class="fa-solid fa-arrow-left arrow"></i>
+                <a href="./../index.html" title="Retourner à la page d'accueil">
+                <i class="fa-solid fa-arrow-left arrow"></i></a>
             </div>
             <div class="page-header-logo">
                 <a href="#" title="Retour à la page d'accueil">
                     <div class="page-header-logo-container">
-                        <img src="./images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68" />
+                        <img src="./../images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68" />
                     </div>
                 </a>
             </div>
@@ -61,15 +66,16 @@
     <main>
         <div class="image-container">
             <figure>
-                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" width="5043" height="3456" alt="Le délice des sens à Folie-Méricourt">
+                <img src="./../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" width="3024" height="3780"
+                alt="La note enchantée à Charonne">
             </figure>
         </div>
 
         <div class="page-main-wrapper">
             <div class="page-main-title">
-                <h1>Le délice des sens</h1>
-                <input type="checkbox" id="palette-favorite">
-                <label for="palette-favorite" title="Ajoutez aux favoris" class="favorite-restaurants">
+                <h1>La note enchantée</h1>
+                <input type="checkbox" id="lanote-favorite">
+                <label for="lanote-favorite" title="Ajoutez aux favoris" class="favorite-restaurants">
                     <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
                     <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite-selected" aria-hidden="true"></i>
                 </label>
@@ -79,12 +85,13 @@
                     <div class="menu-title">entrées</div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree1">
-                        <label for="palette-entree1" class="menu-restaurant-item" title="Fricassée d'escargots">
+                        <input type="checkbox" id="lanote-entree1">
+                        <label for="lanote-entree1" class="menu-restaurant-item" title="Ravioles de foie gras">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Tartare de thon</h2>
-                                    <p>Assaisonné au yuzu</p>
+                                    <h2>Ravioles de foie gras
+                                    </h2>
+                                    <p>Accompagnées de leur crème à la truffe</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     25€
@@ -104,12 +111,12 @@
 
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree2">
-                        <label for="palette-entree2" class="menu-restaurant-item" title="Foie gras de canard mi-cuit">
+                        <input type="checkbox" id="lanote-entree2">
+                        <label for="lanote-entree2" class="menu-restaurant-item" title="Caviar osciètre">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Bouchée de homard croustillant</h2>
-                                    <p>Et sa farandole de petits légumes</p>
+                                    <h2>Caviar osciètre</h2>
+                                    <p>Sur blini à la farine de blé noir</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     35€
@@ -128,15 +135,39 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-entree3">
-                        <label for="palette-entree3" class="menu-restaurant-item" title="Œuf au plat">
+                        <input type="checkbox" id="lanote-entree3">
+                        <label for="lanote-entree3" class="menu-restaurant-item" title="Homard et espuma de potiron">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Poulet rôti aux herbes de Provence</h2>
+                                    <h2>Homard et espuma de potiron</h2>
                                     <p>Et sa crème de truffe</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
-                                    40€
+                                    20€
+                                </div>
+                            </div>
+
+                            <div class="menu-restaurant-item-selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="menu-restaurant">
+                        <input type="checkbox" id="lanote-entree4">
+                        <label for="lanote-entree4" class="menu-restaurant-item" title="Foie gras de canard cuit entier">
+                            <div class="menu-restaurant-item-content">
+                                <div class="menu-restaurant-item-txt">
+                                    <h2>Foie gras de canard cuit entier</h2>
+                                    <p>Confiture de figue et pain toasté</p>
+                                </div>
+                                <div class="menu-restaurant-item-price">
+                                    35€
                                 </div>
                             </div>
 
@@ -157,12 +188,12 @@
                 <section class="menu-section plats">
                     <div class="menu-title">plats</div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat1">
-                        <label for="palette-plat1" class="menu-restaurant-item" title="Filet de bœuf aux herbes">
+                        <input type="checkbox" id="lanote-plat1">
+                        <label for="lanote-plat1" class="menu-restaurant-item" title="Noix de coquilles Saint-Jacques">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Poulet rôti aux herbes de Provence</h2>
-                                    <p>Et sa crème de truffe</p>
+                                    <h2>Noix de coquilles Saint-Jacques</h2>
+                                    <p>Sur lit de purée de céleri-rave</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     40€
@@ -182,12 +213,12 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat2">
-                        <label for="palette-plat2" class="menu-restaurant-item" title="Parmentier de queue de bœuf">
+                        <input type="checkbox" id="lanote-plat2">
+                        <label for="lanote-plat2" class="menu-restaurant-item" title="Langouste poêlée">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Langouste rôtie</h2>
-                                    <p>Et ses légumes de saison</p>
+                                    <h2>Langouste poêlée</h2>
+                                    <p>Purée de patate douce</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     35€
@@ -206,15 +237,15 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-plat3">
-                        <label for="palette-plat3" class="menu-restaurant-item" title="Filet de turbot">
+                        <input type="checkbox" id="lanote-plat3">
+                        <label for="lanote-plat3" class="menu-restaurant-item" title="Mijoté de queue de bœuf">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Côte de bœuf Angus</h2>
-                                    <p>Et sa purée de panais</p>
+                                    <h2>Mijoté de queue de bœuf</h2>
+                                    <p>Et riz sauvage aux zestes de citron</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
-                                44€
+                                45€
                                 </div>
                             </div>
 
@@ -233,12 +264,12 @@
                 <section class="menu-section desserts">
                     <div class="menu-title">desserts</div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert1">
-                        <label for="palette-dessert1" class="menu-restaurant-item" title="Paris-Brest">
+                        <input type="checkbox" id="lanote-dessert1">
+                        <label for="lanote-dessert1" class="menu-restaurant-item" title="Macaron noisette et chocolat">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Farandole de desserts</h2>
-                                    <p>Du chef</p>
+                                    <h2>Macaron noisette et chocolat</h2>
+                                    <p>Glace au caramel brun et sel de Guérande</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     18€
@@ -257,13 +288,13 @@
                     </div>
 
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert2">
-                        <label for="palette-dessert2" class="menu-restaurant-item"
-                            title="Macaron au chocolat d'exception">
+                        <input type="checkbox" id="lanote-dessert2">
+                        <label for="lanote-dessert2" class="menu-restaurant-item"
+                            title="Baba au rhum revisité">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Crème brulée</h2>
-                                    <p>Revisitée</p>
+                                    <h2>Baba au rhum revisité</h2>
+                                    <p>Avec son coulis de citron</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     22€
@@ -281,13 +312,13 @@
                         </label>
                     </div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="palette-dessert3">
-                        <label for="palette-dessert3" class="menu-restaurant-item" title="Mousse au chocolat">
+                        <input type="checkbox" id="lanote-dessert3">
+                        <label for="lanote-dessert3" class="menu-restaurant-item" title="Tarte au citron meringuée">
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Tiramisu
+                                    <h2>Tarte au citron meringuée
                                     </h2>
-                                    <p>À la noisette</p>
+                                    <p>Déstructurée</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     23€

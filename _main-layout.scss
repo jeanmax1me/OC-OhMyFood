@@ -35,8 +35,11 @@
   align-items: center;
 }
 
-// END OF HEADER -------- LOGO & CITY -----------------
+.header-location input {
+  width: 109px;
+}
 
+// END OF HEADER -------- LOGO & CITY -----------------
 
 // START OF SEARCH SECTION
 
@@ -270,4 +273,125 @@ figcaption {
 
 .footer-nav-item:nth-child(2) svg {
   margin-right: 10.08px;
+}
+
+// tablet and desktop styles
+
+@media (min-width: 900px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .search {
+    height: 239px;
+    display: grid;
+    place-items: center;
+  }
+  .search-wrapper {
+    display: flex;
+    width: 645px;
+    height: 179px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+  .search-heading {
+    height: 47px;
+    font-family: Roboto;
+    font-size: 26.5px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    white-space: nowrap;
+    transform: translateX(12px);
+  }
+  .search-discover {
+    height: 46px;
+    align-items: center;
+  }
+  .search-button {
+    margin-top: 0;
+  }
+  .fonctionnement {
+    height: 228px;
+    max-width: 1440px;
+    padding: 0 193.5px;
+  }
+  .fonctionnement-options {
+    flex-direction: row;
+    column-gap: 36px;
+  }
+  .fonctionnement-options-row {
+    max-width: 335px;
+    max-height: 72.38px;
+  }
+  .restaurants {
+    height: 674px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .restaurants-title {
+    padding-top: 24px;
+    margin-bottom: 21px;
+  }
+  .restaurants-cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+    padding-bottom: 30px;
+  }
+  .restaurants-card {
+    height: 251px;
+  }
+  .footer {
+    height: 114px;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 0;
+  }
+  .footer-nav {
+    height: 100%;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 661px;
+    column-gap: 7px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 48px;
+    margin-right: 44px;
+  }
+
+  .footer-nav-item {
+    margin-bottom: 0;
+  }
+  .footer-nav-item:nth-child(1) {
+    width: 190px;
+  }
+  .footer-nav-item:nth-child(2) {
+    width: 190px;
+  }
+  .footer-nav-item:nth-child(3) {
+    width: 130px;
+    font-weight: 300;
+    line-height: 18.75px;
+  }
+  .footer-nav-item:nth-child(4) {
+    width: 130px;
+    font-weight: 300;
+    line-height: 18.75px;
+  }
+  .footer-logo {
+    padding-top: 57px;
+    width: 137.58px;
+  }
 }
