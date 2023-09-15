@@ -24,4 +24,4 @@ Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont di
 
 Nous espérons que vous apprécierez l'expérience OhMyFood !
 
-Bon utilisation et bon appétit !
+Bonne utilisation et bon appétit !
