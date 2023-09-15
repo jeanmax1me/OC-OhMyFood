@@ -300,7 +300,7 @@ body {
 .image-container {
   width: 100%;
   position: relative;
-  padding-bottom: 383px;
+  padding-bottom: 396px;
   overflow: hidden;
 }
 
@@ -343,5 +343,11 @@ justify-content: center;
 }
 .menu-title::before {
 width: 6.31%;
+}
+.page-main-wrapper {
+  padding-bottom: 40px;
+}
+.footer {
+  margin-top: -54px;
 }
 }
