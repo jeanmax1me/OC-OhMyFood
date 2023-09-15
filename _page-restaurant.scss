@@ -109,16 +109,26 @@
   cursor: pointer;
 }
 
+/* Initial styles for the unfilled-heart */
+input[type="checkbox"]:not(:checked) ~ .favorite-restaurants .unfilled-heart {
+  display: visible;
+}
+
+/* Initial styles for the filled-heart */
 input[type="checkbox"]:not(:checked) ~ .favorite-restaurants .filled-heart {
   display: none;
-  visibility: visible;
 }
 
+/* Styles when the checkbox is checked */
 input[type="checkbox"]:checked ~ .favorite-restaurants .unfilled-heart {
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 
+/* Styles when the checkbox is checked */
+input[type="checkbox"]:checked ~ .favorite-restaurants .filled-heart {
+  display: visible; 
+
+}
 
 .menu-section {
   display: flex;
@@ -211,10 +221,6 @@ input[type="checkbox"]:checked ~ .menu-restaurant-item .menu-restaurant-item-sel
   box-shadow: none;
 }
 
-.page-footer {
-  margin-top: 0;
-}
-
 .menu-restaurant-item-txt h2 {
   font-family: Roboto;
   font-size: 18px;
@@ -267,7 +273,11 @@ main {
 
 .page-footer {
   top: -16px;
-}
+    height: 186px;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+  }
 
 // tablet and desktop styles
 
@@ -347,7 +357,56 @@ width: 6.31%;
 .page-main-wrapper {
   padding-bottom: 40px;
 }
-.footer {
+
+.page-footer {
+  display: flex;
+  height: 114px;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 0;
   margin-top: -54px;
+}
+.footer-nav {
+  height: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  width: 661px;
+  column-gap: 7px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 48px;
+  margin-right: 44px;
+}
+
+.footer-nav-item {
+  margin-bottom: 0;
+}
+.footer-nav-item:nth-child(1) {
+  width: 190px;
+}
+.footer-nav-item:nth-child(2) {
+  width: 190px;
+}
+.footer-nav-item:nth-child(3) {
+  width: 130px;
+  font-weight: 300;
+  line-height: 18.75px;
+}
+.footer-nav-item:nth-child(4) {
+  width: 130px;
+  font-weight: 300;
+  line-height: 18.75px;
+}
+.footer-logo {
+  padding-top: 57px;
+  width: 137.58px;
 }
 }
