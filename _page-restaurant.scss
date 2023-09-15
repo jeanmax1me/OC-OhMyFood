@@ -101,15 +101,17 @@
   }
 }
 
-.page-heart {
+.favorite-restaurants {
   margin-right: 7.03%;
 }
 
+.unfilled-heart {
+  cursor: pointer;
+}
+
 input[type="checkbox"]:not(:checked) ~ .favorite-restaurants .filled-heart {
-  position: absolute;
-  top: 0;
-  right: 0;
-  visibility: hidden;
+  display: none;
+  visibility: visible;
 }
 
 input[type="checkbox"]:checked ~ .favorite-restaurants .unfilled-heart {
