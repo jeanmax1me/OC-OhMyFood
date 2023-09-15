@@ -84,7 +84,7 @@
   margin-right: 20%;
 }
 
-button {
+.search-button a {
   height: 50px;
   border-radius: 25px;
   border: none;
@@ -106,7 +106,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.search-button a:hover {
   opacity: 0.85;
   box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25); /* Adjust the values as needed */
 }
@@ -207,6 +207,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  width: 100%;
 }
 
 .restaurants-card {
@@ -238,7 +239,7 @@ figcaption {
 
 .restaurants-card-content {
   padding-top: 16px;
-  padding-left: 13px;
+  padding-left: 3.82%;
   padding-bottom: 12px;
   height: 30.3%;
 }
@@ -341,6 +342,7 @@ figcaption {
   }
   .restaurants-cards {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 100px;
     row-gap: 50px;
     padding-bottom: 30px;
