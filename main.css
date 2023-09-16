@@ -959,7 +959,6 @@ input[type=checkbox]:checked ~ .favorite-restaurants .filled-heart {
 
 .menu-labels {
   position: absolute;
-  border: 2px solid blue;
   height: 72px;
   width: 100%;
   z-index: 1000;
@@ -1092,18 +1091,17 @@ main {
     height: 96.34px;
     max-width: 1440px;
     display: flex;
-    justify-content: flex-start;
   }
   .page-header-container {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 100%;
   }
   .header-arrow {
-    position: unset;
-    padding-left: 23px;
+    position: absolute;
+    left: 17px;
   }
   .page-header-logo img {
     padding-left: 20px;
