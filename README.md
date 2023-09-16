@@ -6,12 +6,11 @@ OhMyFood est une plateforme web innovante qui répertorie les menus de restauran
 Ce projet a été développé en suivant le principe du "mobile first" pour garantir une expérience utilisateur optimale sur tous les appareils, y compris mobiles, tablettes et desktops. Il intègre également des animations pour rendre l'expérience utilisateur plus dynamique et engageante.
 
 ## Maquettes et Prototype
-Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont disponibles dans le dossier des sources du site. Vous pouvez les consulter pour avoir une meilleure compréhension visuelle du projet.
+Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont disponibles sur Figma. Vous pouvez les consulter pour avoir une meilleure compréhension visuelle du projet.
 
 ## Technologies Utilisées
 - HTML5
 - CSS3 (Sass)
-- JavaScript
 - [Figma](https://www.figma.com/) (Pour le prototype)
 
 ## Fonctionnalités Principales
@@ -23,6 +22,6 @@ Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont di
 
 ---
 
-Nous espérons que vous apprécierez l'expérience sur OhMyFood !
+Nous espérons que vous apprécierez l'expérience OhMyFood !
 
-Bonne utilisation !
+Bonne utilisation et bon appétit !
