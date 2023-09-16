@@ -17,6 +17,10 @@ a {
     cursor: pointer;
 }
 
+label {
+  cursor: pointer;
+}
+
 // Filled hearts
 
 @mixin favorite-selected {
