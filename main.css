@@ -830,7 +830,6 @@ figcaption {
   padding-top: 32px;
   position: relative;
   top: -55px;
-  text-wrap: nowrap;
 }
 
 .main-title {
@@ -876,7 +875,7 @@ figcaption {
 
 /* Initial styles for the unfilled-heart */
 input[type=checkbox]:not(:checked) ~ .favorite-restaurants .unfilled-heart {
-  display: visible;
+  display: block;
 }
 
 /* Initial styles for the filled-heart */
@@ -891,7 +890,7 @@ input[type=checkbox]:checked ~ .favorite-restaurants .unfilled-heart {
 
 /* Styles when the checkbox is checked */
 input[type=checkbox]:checked ~ .favorite-restaurants .filled-heart {
-  display: visible;
+  display: block;
 }
 
 .menu-section {
