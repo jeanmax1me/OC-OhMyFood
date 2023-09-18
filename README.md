@@ -10,7 +10,8 @@ Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont di
 
 ## Technologies Utilisées
 - HTML5
-- CSS3 (Sass)
+- CSS3 
+- [SASS](https://sass-lang.com/)
 - [Figma](https://www.figma.com/) (Pour le prototype)
 
 ## Fonctionnalités Principales

@@ -21,6 +21,17 @@ label {
   cursor: pointer;
 }
 
+.footer-txt {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-txt:hover {
+  color: transparent; 
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text; 
+  background-clip: text;
+}
+
 // Filled hearts
 
 @mixin favorite-selected {
@@ -30,6 +41,8 @@ label {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+
 
 // Loading spinner
 
