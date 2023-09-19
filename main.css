@@ -146,6 +146,58 @@ input {
   animation-fill-mode: forwards;
 }
 
+.favorite-selected {
+  cursor: pointer;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fav 1.2s 1;
+}
+
+@keyframes fav {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.25);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  20% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  30% {
+    transform: scale(1.4);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  40% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  70% {
+    transform: scale(1.4);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  80% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  90% {
+    transform: scale(1.25);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -385,38 +437,38 @@ figcaption {
     transform: scale(1);
   }
   10% {
-    transform: scale(1.4);
+    transform: scale(1.25);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   20% {
-    transform: scale(1.8);
+    transform: scale(1.5);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   30% {
-    transform: scale(1.75);
+    transform: scale(1.4);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   40% {
-    transform: scale(1.7);
+    transform: scale(1.5);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   50% {
-    transform: scale(1.75);
+    transform: scale(1.4);
   }
   60% {
-    transform: scale(1.8);
+    transform: scale(1.5);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   70% {
-    transform: scale(1.75);
+    transform: scale(1.4);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   80% {
-    transform: scale(1.8);
+    transform: scale(1.5);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   90% {
-    transform: scale(1.4);
+    transform: scale(1.25);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   100% {
@@ -1073,7 +1125,6 @@ input[type=checkbox]:checked ~ .menu-restaurant-item .menu-restaurant-item-selec
   align-items: center;
   background-color: #99e2d0;
   border-radius: 0 20% 20% 0;
-  right: 0px;
   transition: 0.56s;
 }
 
