@@ -165,7 +165,7 @@ input {
   
   .favorite-selected { 
     @include favorite-selected;
-    animation: fav 1.2s 1;
+    animation: fav 1s 1;
     }
     
     @keyframes fav {

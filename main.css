@@ -152,7 +152,7 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fav 1.2s 1;
+  animation: fav 1s 1;
 }
 
 @keyframes fav {
